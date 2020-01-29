@@ -61,6 +61,12 @@ rails db:create
 rails db:migrate
 ```
 
+#### Run migrations for test DB
+
+```shell
+RAILS_ENV=test rails db:migrate
+```
+
 #### Seeds database with fake data
 
 ```shell
@@ -72,18 +78,6 @@ rails db:test:populate
 ```shell
 Login - test@test.com
 Password - 123456
-```
-
-#### Run Rubocop
-
-```shell
-rubocop
-```
-
-#### Run Rubocop with auto refactoring
-
-```shell
-rubocop -a
 ```
 
 #### Setup RSpec
